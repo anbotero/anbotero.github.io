@@ -1,0 +1,22 @@
+---
+layout: section
+schema: Blog
+---
+{% assign description = page.description %}
+      <section id="page-content" role="document">
+        <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting" {% if page.lang %}lang="{{ page.lang }}"{% endif %} role="article">
+          <header id="writing-header">
+            <h1 id="writing-title" itemprop="headline">{{ page.title }}</h1>
+            <div class="writing-extra">
+              <time id="writing-date" datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished" pubdate="pubdate">{{ page.date | date_to_string }}</time>
+            </div>
+          </header>
+
+          <section id="writing-body" itemprop="articleBody">
+{{ content }}
+          </section>
+        </article>
+        {% if site.posts.size > 1 %}
+{% include writings_navigation.html %}
+        {% endif %}
+      </section>

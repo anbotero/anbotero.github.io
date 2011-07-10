@@ -1,0 +1,15 @@
+/* TEAM */
+  Author, Designer & Developer: Andrés Botero Castro
+  Website: http://andresbotero.co
+  Email: hello[at]andresbotero.co
+  Twitter: @andevco
+  From: Valledupar, Colombia
+  Location: Bogotá, Colombia
+
+/* SITE */
+  Last update: 2011/07/01
+  Language: English
+  Standards: HTML5, CSS3
+  Components: jQuery
+  Tools: Jekyll
+  Software: TextMate, Git, Chrome Developer Tools

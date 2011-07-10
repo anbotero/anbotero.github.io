@@ -1,0 +1,511 @@
+/* Base style
+=============================== */
+
+/* Baseline
+------------------------------- */
+body {
+  background: -moz-linear-gradient(top, hsl(210, 6%, 23%), hsl(204, 17%, 10%)); /* FF */
+  background: -webkit-gradient(linear, left top, left bottom, from(hsl(210, 6%, 23%)), to(hsl(204, 17%, 10%))) fixed; /* Webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#383a3c', endColorstr='#171a1c'); /* IE */
+  background-color: hsl(204, 17%, 16%); /* For browsers not supporting gradients */
+  color: hsl(0, 0%, 88%);
+  font: 100%/120% "Yanone Kaffeesatz", "Trebuchet MS", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings
+------------------------------- */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+/*
+h1, h2, h3, h4, h5, h6 {
+  font-family: Ubuntu, Verdana, sans-serif;
+} */
+
+/* Emphasis and strong
+------------------------------- */
+b, strong {
+  font-weight: 700;
+  -moz-transition: color .8s;
+  -webkit-transition: color .8s;
+  transition: color .8s;
+}
+
+b:hover, strong:hover {
+  color: hsl(0, 0%, 100%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+/* Hyperlinks
+------------------------------- */
+a:hover, a:active { outline: 0; }
+
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
+
+a:link {
+  color: hsl(60, 70%, 50%);
+  -moz-transition: color .8s;
+  -webkit-transition: color .8s;
+  transition: color .8s;
+}
+
+a:visited {
+  color: hsl(60, 70%, 50%);
+  /* color: hsl(270, 80%, 32%); */
+}
+
+a:hover {
+  /* color: hsl(210, 70%, 50%); */
+  color: hsl(130, 70%, 50%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+a:active {
+  position: relative;
+  top: .1em;
+}
+
+/* a:visited:hover { color: hsl(270, 80%, 48%); }
+
+a[href^="http"]::after { content: "\293B"; } */
+
+/* Selection
+------------------------------- */
+::-moz-selection {
+  background: #FE57A1;
+  color: #FFF;
+  text-shadow: none;
+}
+
+::selection {
+  background: #FE57A1;
+  color: #FFF;
+  text-shadow: none;
+}
+
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+/* Navigation lists
+------------------------------- */
+nav ul, nav li {
+  list-style: none;
+  list-style-image: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Quotes
+------------------------------- */
+:lang(en) > q { quotes: "“" "”" "‘" "’"; }
+:lang(es) > q { quotes: "«" "»" "“" "”"; }
+:lang(fr) > q { quotes: "« " " »" "‹ " " ›"; }
+:lang(ja) > q { quotes: "「" "」" "『" "』"; }
+
+q::before { content: open-quote; }
+q::after  { content: close-quote; }
+
+blockquote {
+  /* background-color: hsl(210, 10%, 24%); */
+  border-left: 1px hsl(0, 0%, 32%) solid;
+  font-style: italic;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
+/* Code
+------------------------------- */
+pre, code, kbd, samp {
+  font-family: Consolas, Menlo, Inconsolata, monospace;
+  font-size: .8em;
+}
+
+/*pre, code {
+  background-color: hsl(0, 0%, 16%);
+  border: 1px hsl(0, 0%, 8%) solid;
+  text-shadow: none;
+}*/
+
+pre > code {
+  /*border: none;*/
+  font-size: inherit;
+}
+
+/* Abbreviations
+------------------------------- */
+abbr {
+  border-bottom-style: dotted;
+  border-bottom-width: 1px;
+  cursor: help;
+}
+
+
+/* Site general
+=============================== */
+
+/* Base
+------------------------------- */
+#page-container {
+  font-size: 1.6em;
+  line-height: 1.2;
+  text-shadow: #000 0 .1em .4em;
+}
+
+img.profile {
+  background-color: hsl(0, 0%, 96%);
+  border: 1px hsl(0, 0%, 8%) solid;
+  border-radius: .24em;
+  padding: .4em;
+}
+
+
+/* Page header
+------------------------------- */
+#page-header {
+  margin-bottom: 1.6em;
+  text-align: center;
+}
+
+#title {
+  font-size: 2.3em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+#title a {
+  color: hsl(0, 0%, 88%);
+}
+
+#title a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+#subtitle {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+/* Page navigation
+------------------------------- */
+#page-navigation li {
+  display: inline;
+  margin: 0 .4em;
+}
+
+#page-navigation li:first-child { margin-left: 0; }
+
+#page-navigation li:last-child { margin-right: 0; }
+
+.blog-link:hover {
+  color: hsl(0, 70%, 50%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.about-link:hover {
+  color: hsl(210, 24%, 32%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.github-link:hover {
+  color: hsl(280, 70%, 50%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+.twitter-link:hover {
+  color: hsl(210, 70%, 50%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+
+/* Page content
+------------------------------- */
+#page-content {
+  border-top: 1px hsl(0, 0%, 100%) outset;
+  /*background: url("/images/line.png") no-repeat top;
+  padding-top: .4em;*/
+}
+
+#page-content h1:first-of-type {
+  margin: .4em auto;
+}
+
+#page-content p + p { text-indent: 1.6em; }
+
+#page-content p.note { text-indent: 0; }
+
+#page-content p.note::before {
+  color: hsl(0, 50%, 50%);
+  content: "\2699 \0020";
+  font-weight: 700;
+}
+
+/* Page footer
+------------------------------- */
+#page-footer {
+  border-top: 1px hsl(0, 0%, 100%) outset;
+  /*background: url("/images/line.png") no-repeat top;
+  padding-top: .4em;*/
+  text-align: center;
+}
+
+
+/* Site specific
+=============================== */
+
+/* Home
+------------------------------- */
+div.site-home { margin: 24% auto; }
+
+/* Sections
+------------------------------- */
+div.site-section {
+/*
+  border: 1px hsl(0, 0%, 16%) solid;
+  -moz-box-shadow: #000 0 .16em .4em;
+  box-shadow: #222 0 1em 1em;
+*/
+  margin: 0 auto;
+  max-width: 24em;
+  min-width: 24em;
+  padding: 0 1.6em;
+}
+
+ul.sharing-love {
+  list-style: none;
+  text-align: center;
+}
+
+ul.sharing-love, ul.sharing-love li {
+  display: inline;
+}
+
+/* a.twitter-share-button, div.g-plusone */
+
+/* About
+-------------------------------
+#page-content h2 { color: hsl(0, 40%, 50%);} */
+
+/* Writings list
+-------------------------------
+#writings-list { font-size: 1.2em; } */
+
+#writings-list li {
+  list-style: none;
+  margin: .4em 0;
+}
+
+#writings-list li a {
+  font-weight: 700;
+}
+
+#writings-list time { margin: 0 1.6em 0 0; }
+
+/* Writing
+------------------------------- */
+div.writing-extra {
+  margin-top: -1em;
+}
+
+#writing-body > p:first-of-type::first-letter {
+  float: left;
+  font-size: 2em;
+  margin-bottom: -.16em;
+  padding-right: .16em;
+}
+
+#writing-body > p:first-of-type::first-line {
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+
+h2.writing-chapter::before {
+  content: counter(chapter) ". ";
+}
+
+h2.writing-chapter {
+  border-bottom: 1px hsl(0, 0%, 64%) solid;
+  counter-increment: chapter;
+  counter-reset: section;
+  padding-bottom: .16em;
+}
+
+h3.writing-section::before {
+  content: counter(chapter) "." counter(section) ". ";
+}
+
+h3.writing-section {
+  counter-increment: section;
+}
+
+/*
+.writing-title, .writing-chapter, .writing-subsection {
+  font-family: Cabin, Georgia, serif;
+} */
+
+aside.writings-navigation {
+  margin: 2em auto 1.6em;
+}
+
+a.writing-prev span, a.writing-next span {
+  font-style: italic;
+}
+
+/*a.writing-prev span, a.writing-next span {
+  color: hsl(0, 16%, 48%);
+  font-style: italic;
+  -moz-transition: color .8s;
+  -webkit-transition: color .8s;
+  transition: color .8s;
+}
+
+a.writing-prev, a.writing-next {
+  color: hsl(120, 50%, 64%);
+}
+
+a.writing-prev:hover, a.writing-next:hover {
+  color: hsl(120, 90%, 64%);
+}
+
+a.writing-prev span:hover, a.writing-next span:hover {
+  color: hsl(0, 16%, 64%);
+  -moz-transition: color .4s;
+  -webkit-transition: color .4s;
+  transition: color .4s;
+}
+*/
+
+
+/* Helpers
+=============================== */
+
+/* Content visibility
+------------------------------- */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* The magnificent clearfix
+------------------------------- */
+.clearfix::before, .clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after { clear: both; }
+
+/* Position
+------------------------------- */
+.callout-left {
+  float: left;
+  margin-right: .8em;
+}
+
+.callout-right {
+  float: right;
+  margin-left: .8em;
+}
+
+/* Annotation
+------------------------------- */
+span.amp {
+  font-family: "Palatino Linotype", Palatino, Baskerville, Times, "Times New Roman", Georgia, serif;
+  font-style: italic;
+}
+
+span.parenthesis::before, span.parenthesis::after {
+  content: " — ";
+}
+
+/* Characters
+-------------------------------
+2058
+2318
+238B
+22B0
+22B1
+21AC
+21F1
+
+Hand-right 261B
+Peace-symbol 262E
+
+Hazard 2623
+Radioactive 2622
+Skull 2620
+White-chess-king 2654
+Black-chess-king 265A
+
+Libra 264E
+Scales 2696
+
+Crossed-swords 2694
+Staff-aesculapius 2695
+Atom 269B
+
+Interrobang 203D
+Inverted-interrobang 2E18
+
+Vesta 26B6
+
+Twitter 267A
+
+Heart 2767
+
+Paragraph-start 27D4
+Paragraph-end 27D3
+
+Faces 2E1A 
+Lambda 03BB
+
+Infinite 221E;
+&lambda;
+&#x00A7;
+&hearts;
+*/

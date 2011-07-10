@@ -1,0 +1,6 @@
+exclude:
+  - temp.html
+  - README.markdown
+paginate: 8
+url: http://andresbotero.co
+permalink: /writings/:title
