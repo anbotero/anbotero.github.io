@@ -12,7 +12,7 @@ schema: Blog
           {% for writing in site.posts %}
           <li itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
             <time datetime="{{ writing.date | date: "%Y-%m-%d" }}" itemprop="datePublished" pubdate="pubdate">{{ writing.date | date_to_string }}</time>
-            <a href="{{ writing.url }}" itemprop="headline">{{ writing.title }}</a>
+            <a href="{{ writing.url }}"><span itemprop="headline">{{ writing.title }}</span></a>
           </li>
           {% endfor %}
         </ul>
