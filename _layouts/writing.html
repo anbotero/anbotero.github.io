@@ -16,7 +16,7 @@ schema: Blog
 {{ content }}
           </section>
         </article>
-        {% if site.posts.size > 1 %}
+{% if site.posts.size > 1 %}
 {% include writings_navigation.html %}
-        {% endif %}
+{% endif %}
       </section>
