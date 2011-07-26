@@ -18,11 +18,11 @@
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
   </url>
-  {% for writing in site.posts %}
+{% for writing in site.posts %}
   <url>
       <loc>http://{{ site.domain }}{{ writing.id }}/</loc>
       <lastmod>{{ writing.date | date: "%Y-%m-%d" }}</lastmod>
       <priority>0.6</priority>
   </url>
-  {% endfor %}
+{% endfor %}
 </urlset>
