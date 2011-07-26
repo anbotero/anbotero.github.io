@@ -38,6 +38,7 @@ b, strong {
   font-weight: 700;
   -moz-transition: color .8s;
   -webkit-transition: color .8s;
+  -o-transition: color .8s;
   transition: color .8s;
 }
 
@@ -45,6 +46,7 @@ b:hover, strong:hover {
   color: hsl(0, 0%, 100%);
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
 }
 
@@ -58,6 +60,7 @@ a:link {
   color: hsl(60, 70%, 50%);
   -moz-transition: color .8s;
   -webkit-transition: color .8s;
+  -o-transition: color .8s;
   transition: color .8s;
 }
 
@@ -71,6 +74,7 @@ a:hover {
   color: hsl(130, 70%, 50%);
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
 }
 
@@ -204,6 +208,7 @@ img.profile {
 #page-navigation li {
   display: inline;
   margin: 0 .4em;
+  text-transform: lowercase;
 }
 
 #page-navigation li:first-child { margin-left: 0; }
@@ -214,6 +219,7 @@ img.profile {
   color: hsl(0, 70%, 50%);
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
 }
 
@@ -221,6 +227,7 @@ img.profile {
   color: hsl(210, 24%, 32%);
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
 }
 
@@ -228,6 +235,7 @@ img.profile {
   color: hsl(280, 70%, 50%);
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
 }
 
@@ -235,6 +243,7 @@ img.profile {
   color: hsl(210, 70%, 50%);
   -moz-transition: color .4s;
   -webkit-transition: color .4s;
+  -o-transition: color .4s;
   transition: color .4s;
 }
 
@@ -508,4 +517,40 @@ Infinite 221E;
 &lambda;
 &#x00A7;
 &hearts;
+
+
+#chatter div.like-it {
+  float: right;
+  padding: 10px 10px 6px 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px inset, rgba(255, 255, 255, 0.1) 0px -1px 1px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px inset, rgba(255, 255, 255, 0.1) 0px -1px 1px inset;
+  -o-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px inset, rgba(255, 255, 255, 0.1) 0px -1px 1px inset;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px inset, rgba(255, 255, 255, 0.1) 0px -1px 1px inset;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0.05)), color-stop(100%, rgba(0, 0, 0, 0.05))), url('images/header-bg.gif?1305833396');
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('images/header-bg.gif?1305833396');
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('images/header-bg.gif?1305833396');
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('images/header-bg.gif?1305833396');
+  background: linear-gradient(top, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('images/header-bg.gif?1305833396');
+}
+
+.sidenote {
+  float: left;
+  width: 120px;
+  margin: .2143em 0 0 -164px; 
+  font-size: .875em !important;
+  line-height: 1.42857 !important;
+}
+.sidenote > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.sidenote p+p {
+  margin-top: 1.5em;
+}
 */
