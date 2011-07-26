@@ -1,28 +1,30 @@
 ---
+permalink: /feed/index.html
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Andrés Botero’s writings</title>
   <subtitle>Writings about code, life, and other good stuff by Andrés Botero.</subtitle>
-  <link href="http://{{ site.domain }}/atom.xml" rel="self" />
+  <link href="http://{{ site.domain }}/feed/" rel="self" />
   <link href="http://{{ site.domain }}/writings/" />
   <id>http://{{ site.domain }}/writings/</id>
-  <updated>{{ page.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+  <!-- date: "%Y-%m-%dT%H:%M:%SZ" -->
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
   <author>
     <name>Andrés Botero</name>
   </author>
-  {% for writing in site.posts %}
+{% for writing in site.posts %}
   <entry>
     <!-- RFC 4151 compliant tag -->
     <id>tag:{{ site.domain }},{{ writing.date | date: "%Y-%m-%d" }}:{{ writing.id | replace: "#", "/" }}</id>
     <title>{{ writing.title }}</title>
-    <link href="http://{{ site.domain }}{{ writing.url }}/" />
-    <updated>{{ writing.date | date: "%Y-%m-%dT%H:%M:%SZ" }}</updated>
+    <link href="http://{{ site.domain }}{{ writing.url }}" />
+    <updated>{{ writing.date | date_to_xmlschema }}</updated>
     <summary>{{ writing.description }}</summary>
-    {% for category in post.categories %}
+{% for category in post.categories %}
     <category scheme="http://{{ site.domain }}/tag" term="{{ category }}"/>
-    {% endfor %}
+{% endfor %}
     <content type="html">{{ writing.content | xml_escape }}</content>
   </entry>
-  {% endfor %}
+{% endfor %}
 </feed>

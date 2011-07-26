@@ -3,5 +3,4 @@ exclude:
   - README.markdown
 paginate: 8
 domain: andresbotero.co
-permalink: /writings/:title
-ga_id: UA-24450004-1
+permalink: /writings/:title/
