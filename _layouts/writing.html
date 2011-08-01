@@ -9,6 +9,7 @@ schema: Blog
             <h1 id="writing-title" itemprop="headline">{{ page.title }}</h1>
             <div class="writing-extra">
               <time id="writing-date" datetime="{{ page.date | date: "%Y-%m-%d" }}" itemprop="datePublished" pubdate="pubdate">{{ page.date | date_to_string }}</time>
+{% include share_options.html %}
             </div>
           </header>
 

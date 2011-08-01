@@ -1,12 +1,12 @@
 ---
 layout: writing
 title: Initial commit
-description: There is always a initial commit. That first step that sets us up
-             in our way. This is my initial commit.
+description: There is always an initial commit. That first step that sets us
+             up in our way. This is my initial commit.
 ---
-Wow, what can I say. It’s been a long journey. For four years I’ve been trying
-to get my own site on‐line, to no avail. There always were obstacles which would
-prevent me from doing it:
+Wow, what can I say. It’s been a long journey. I’ve been working four years
+trying to get my own Website on‐line, to no avail. There were obstacles
+everywhere which would prevent me from doing so:
 
 * Distraction.
 * Commitment.
@@ -21,7 +21,7 @@ sharing my experiences on programming‐related topics here. I’m a student at 
 
 I started this blog in my lovely MacBook, so most of what I will reveal will be
 tested on Mac OS X. I’ll probably make a post about setting up a Ruby on Rails
-environment under Mac OS X *(wow, really, something never **ever** seen before)*
+environment under Mac OS X *(wow, really, something never __ever__ seen before)*
 when time’s right. I plan on documenting other interesting *(and maybe not so
 interesting)* things I bump into while getting used to Mac OS X.
 

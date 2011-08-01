@@ -168,7 +168,7 @@ abbr {
   text-shadow: #000 0 .1em .4em;
 }
 
-img.profile {
+.profile-image {
   background-color: hsl(0, 0%, 96%);
   border: 1px hsl(0, 0%, 8%) solid;
   border-radius: .24em;
@@ -300,13 +300,15 @@ div.site-section {
   padding: 0 1.6em;
 }
 
-ul.sharing-love {
+.sharing-love {
+  display: inline;
   list-style: none;
   text-align: center;
 }
 
-ul.sharing-love, ul.sharing-love li {
+.sharing-love li {
   display: inline;
+  margin: .4em auto;
 }
 
 /* a.twitter-share-button, div.g-plusone */
@@ -376,7 +378,7 @@ aside.writings-navigation {
   margin: 2em auto 1.6em;
 }
 
-a.writing-prev span, a.writing-next span {
+.writing-prev, .writing-next {
   font-style: italic;
 }
 
