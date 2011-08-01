@@ -5,5 +5,24 @@
 {{ content }}
 {% include footer.html %}
     </div>
+
+    <script async="async" src="http://www.google-analytics.com/ga.js"></script>
+    <script async="async" src="https://apis.google.com/js/plusone.js"></script>
+    <script async="async" src="http://platform.twitter.com/widgets.js"></script>
+    <script>
+      var _gaq = [['_setAccount', 'UA-24841064-1'], ['_trackPageview'], ['_trackPageLoadTime']];
+
+      function plusonevote(vote) {
+        if(vote.state == "on") {
+          _gaq.push(['_trackEvent', 'Sharing Love', 'Google Plus One', document.title]);
+        } else if(vote.state == "off") {
+          _gaq.push(['_trackEvent', 'Sharing Love', 'Google Less One', document.title]);
+        }
+      }
+
+      twttr.events.bind('tweet', function(event) {
+        _gaq.push(['_trackEvent', 'Sharing Love', "Tweet", document.title]);
+      });
+    </script>
   </body>
 </html>
