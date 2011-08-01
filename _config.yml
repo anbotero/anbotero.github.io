@@ -3,4 +3,5 @@ exclude:
   - README.markdown
 paginate: 8
 domain: andresbotero.co
+twitter: andevco
 permalink: /writings/:title/
