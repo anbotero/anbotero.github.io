@@ -12,16 +12,8 @@
     <script>
       var _gaq = [['_setAccount', 'UA-24841064-1'], ['_trackPageview'], ['_trackPageLoadTime']];
 
-      function plusonevote(vote) {
-        if(vote.state == "on") {
-          _gaq.push(['_trackEvent', 'Sharing Love', 'Google Plus One', document.title]);
-        } else if(vote.state == "off") {
-          _gaq.push(['_trackEvent', 'Sharing Love', 'Google Less One', document.title]);
-        }
-      }
-
-      twttr.events.bind('tweet', function(event) {
-        _gaq.push(['_trackEvent', 'Sharing Love', "Tweet", document.title]);
+      twttr.events.bind('tweet', function() {
+        _gaq.push(['_trackSocial', "Twitter", "Tweet"]);
       });
     </script>
   </body>
