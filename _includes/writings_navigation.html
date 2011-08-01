@@ -1,8 +1,8 @@
         <aside class="writings-navigation clearfix" role="complementary">
           {% if page.previous %}
-          <a class="writing-prev callout-left" href="{{ page.previous.url }}"><span>{{ page.previous.title }}</span><br/>← Previous writing</a>
+          <a class="writing-prev callout-left" href="{{ page.previous.url }}">← {{ page.previous.title }}</a>
           {% endif %}
           {% if page.next %}
-          <a class="writing-next callout-right" href="{{ page.next.url }}"><span>{{ page.next.title }}</span><br/>Next writing →</a>
+          <a class="writing-next callout-right" href="{{ page.next.url }}">{{ page.next.title }} →</a>
           {% endif %}
         </aside>
