@@ -31,4 +31,4 @@ knows, maybe one day I will write about something *you* didn’t know.
 
 Have fun!
 
-[poli]: http://www.poli.edu.co/
+[poli]: http://www.poligran.edu.co/
