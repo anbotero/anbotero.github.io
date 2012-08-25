@@ -1,8 +1,8 @@
 ---
 layout: writing
-title: Initial commit
-description: There is always an initial commit. That first step that sets us
-             up in our way. This is my initial commit.
+title: "Initial commit"
+description: "There is always an initial commit. That first step that sets us
+             up in our way. This is my initial commit."
 ---
 Wow, what can I say. It’s been a long journey. I’ve been working four years
 trying to get my own Website on‐line, to no avail. There were obstacles

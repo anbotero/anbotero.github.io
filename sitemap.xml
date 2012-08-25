@@ -9,7 +9,7 @@
   </url>
   <url>
       <loc>http://{{ site.domain }}/about/</loc>
-      <lastmod>2011-07-09</lastmod>
+      <lastmod>2012-08-16</lastmod>
       <priority>0.8</priority>
   </url>
   <url>

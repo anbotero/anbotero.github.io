@@ -1,3 +1,19 @@
+/* Top page shadow
+body:before {
+          content: "";
+          position: fixed;
+          top: -10px;
+          left: 0;
+          width: 100%;
+          height: 10px;
+
+          -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+              -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+                         box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+
+          z-index: 100;
+} */
+
 /* Base style
 =============================== */
 
@@ -116,8 +132,11 @@ nav ul, nav li {
 ------------------------------- */
 :lang(en) > q { quotes: "“" "”" "‘" "’"; }
 :lang(es) > q { quotes: "«" "»" "“" "”"; }
+/* :lang(es) > q { quotes: '\00AB' '\00BB' '\2039' '\203A'; } */
 :lang(fr) > q { quotes: "« " " »" "‹ " " ›"; }
+/* :lang(fr) > q { quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a'; } */
 :lang(ja) > q { quotes: "「" "」" "『" "』"; }
+/* :lang(de) > q { quotes: '\201E' '\201C' '\201A' '\2018'; } */
 
 q::before { content: open-quote; }
 q::after  { content: close-quote; }

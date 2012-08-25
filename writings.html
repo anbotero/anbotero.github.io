@@ -2,18 +2,20 @@
 layout: section
 permalink: /writings/index.html
 canonical: /writings/
-title: Writings
-description: Writings about code, life, and other good stuff by Andrés Botero.
+title: "Writings"
+description: "Writings about code, life, and other good stuff by Andrés Botero."
 schema: Blog
 ---
       <section id="page-content" itemprop="mainContentOfPage" role="main">
         <h1>Writings</h1>
         <ul id="writings-list" itemprop="blogPosts">
           {% for writing in site.posts %}
+          {%   unless writing.draft %}
           <li itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
             <time datetime="{{ writing.date | date: "%Y-%m-%d" }}" itemprop="datePublished" pubdate="pubdate">{{ writing.date | date_to_string }}</time>
             <a href="{{ writing.url }}"><span itemprop="headline">{{ writing.title }}</span></a>
           </li>
+          {%   endunless %}
           {% endfor %}
         </ul>
       </section>

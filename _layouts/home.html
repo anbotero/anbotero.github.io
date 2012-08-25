@@ -4,9 +4,28 @@
 {% include header.html %}
     </div>
 
-    <script async="async" src="http://www.google-analytics.com/ga.js"></script>
     <script>
-      var _gaq = [['_setAccount', 'UA-24841064-1'], ['_trackPageview'], ['_trackPageLoadTime']];
+      var _gaq=[
+        ['_setAccount','UA-24841064-1'],
+        ['_setSiteSpeedSampleRate',100],
+        ['_trackPageview']
+      ];
+
+      // From https://gist.github.com/1025811
+      (function(doc, script) {
+        var js,
+            fjs = doc.getElementsByTagName(script)[0],
+            add = function(url, id) {
+              if (doc.getElementById(id)) {return;}
+              js = doc.createElement(script);
+              js.src = url;
+              js.async = true;
+              id && (js.id = id);
+              fjs.parentNode.insertBefore(js, fjs);
+            };
+
+        // Google Analytics
+        add(('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js', 'ga');
     </script>
   </body>
 </html>

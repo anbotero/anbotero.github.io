@@ -1,7 +1,15 @@
-exclude:
-  - temp.html
-  - README.markdown
-paginate: 8
 domain: andresbotero.co
 twitter: andevco
+exclude:
+  - temp.html
+  - README.md
+paginate: 8
 permalink: /writings/:title/
+markdown: redcarpet
+pygments: true
+
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - fenced_code_blocks
+    - with_toc_data

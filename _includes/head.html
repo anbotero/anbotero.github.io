@@ -3,9 +3,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>{{ page.title }} » Andrés Botero</title>
     <meta name="description" content="{{ page.description }}" />
-    <meta name="robots" content="noodp,noydir" />
 {% if page.canonical %}
     <link href="http://{{ site.domain }}{{ page.canonical }}" rel="canonical" />
 {% else %}
@@ -15,6 +15,6 @@
     <link href="/styles/base.css" rel="stylesheet" />
     <link href="/feed/" rel="alternate" title="Andrés Botero’s writings" type="application/atom+xml" />
     <!--[if lte IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="/scripts/html5shiv.js"></script>
     <![endif]-->
   </head>
